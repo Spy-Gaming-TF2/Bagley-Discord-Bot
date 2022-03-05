@@ -1,0 +1,20 @@
+//Imports to make the whole thing work
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+
+//Exports these so other files (index.js) can run them.
+module.exports = {
+  //Your basic data. Name, description, and options.
+ 	data : new SlashCommandBuilder()
+		.setName('ping')
+		.setDescription("Pong!"), //Add any additional options here before the comma
+  //What to do after a user runs your command
+	async execute(interaction) {
+    //Require any additional packages, like node-fetch or ytdl-core, here. There are none in this example.
+
+    //Get values of the input and set it to a variable. There are none in this example.
+
+    //Handle the interaction here. If your command takes longer than 3 seconds, make sure to defer the reply. Additionally, make sure to have an interaction.reply() or else your command will fail client-side.
+        interaction.reply("Pong!")
+	},
+}
