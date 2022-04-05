@@ -7,8 +7,9 @@
     "start": "node ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Spy-Gaming-TF2",
   "license": "GPL V2.0",
+
   "devDependencies": {
     "node": "^16.13.0"
   },
