@@ -53,4 +53,4 @@ process.on('unhandledRejection', error => {
 	console.log(error)
 });
 
-client.login(config.token)
+client.login(config.token);

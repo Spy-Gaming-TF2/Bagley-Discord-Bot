@@ -9,6 +9,7 @@ const commandFiles = fs.readdirSync('./slash-commands').filter(file => file.ends
 const clientId = config.clientID;
 const guildId = config.guildId;
 
+//Creates a list of all slash commands in your bot.
 for (const file of commandFiles) {
 	const command = require(`./slash-commands/${file}`);
 	commands.push(command.data.toJSON());
@@ -20,6 +21,7 @@ const rest = new REST({ version: '9' }).setToken(config.token);
 	try {
 		console.log('Started refreshing application (/) commands.');
 
+		// Get the current application info.
 		await rest.put(
             Routes.applicationCommands(clientId, guildId),
             { body: commands },
