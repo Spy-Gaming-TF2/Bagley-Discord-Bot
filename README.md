@@ -1,2 +1,2 @@
 # Codsworth-Discord-Bot
-A bot I have made in my free time. [Invite](invite.sketchysite.xyz) and [Support Server](https://discord.gg/H3E5DSK3Sh). After downloading, run npm i to install all modules required for this bot to run.
+A bot I have made in my free time. [Invite](invite.sketchysite.xyz) and [Support Server](https://discord.gg/H3E5DSK3Sh). After downloading, make a config.json file to store your bot token, clientID (bot's id in a server. Use developer options in discord to get), and guildID (test server) run "npm i" to install all modules required for this bot to run. Run "node ." to start the bot.
