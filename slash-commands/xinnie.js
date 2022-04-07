@@ -6,6 +6,6 @@ module.exports = {
 		.setName('xinnie')
 		.setDescription("Sends Image of Xinnie the Pooh"),
         async execute(interaction) {
-            interaction.reply("https://imgur.com/a/xMzp1iW");
+            interaction.reply({content : "https://imgur.com/a/xMzp1iW", ephemeral : true })
         },
 };
