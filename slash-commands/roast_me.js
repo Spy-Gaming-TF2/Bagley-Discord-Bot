@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("Roast Me")
-        .setDescription("Roast yourself (Might be offensive/NSFW)"),
+        .setDescription("Roast yourself (Might be NSFW)"),
     async execute(interaction) {
         const roast = await fetch('https://evilinsult.com/generate_insult.php?lang=en&type=json')
             .then(res => res.json())
