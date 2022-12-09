@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("coin_flip")
-        .setDescription("Flip a coin."),
+        .setDescription("Flip a coin"),
     async execute(interaction) {
         const coin = ['Heads', 'Tails'][Math.floor(Math.random() * 2)]
         const embed = new MessageEmbed()

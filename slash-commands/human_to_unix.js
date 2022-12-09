@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("human_to_unix")
+        .setName("Human to Unix")
         .setDescription("Converts human time to unix milliseconds.")
         .addStringOption(option => option.setName('time').setDescription('Time to convert').setRequired(true)),
     async execute(interaction) {

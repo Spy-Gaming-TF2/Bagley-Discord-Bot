@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("rps")
-        .setDescription("Play rock paper scissors with the bot.")
+        .setDescription("Play rock paper scissors")
         .addStringOption(option => option.setName('choice').setDescription('Your choice').setRequired(true).addChoice('Rock', 'rock').addChoice('Paper', 'paper').addChoice('Scissors', 'scissors')),
     async execute(interaction) {
         const choice = interaction.options.getString('choice')
