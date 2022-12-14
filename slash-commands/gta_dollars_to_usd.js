@@ -16,3 +16,4 @@ module.exports = {
             .setTimestamp()
         return interaction.followUp({ embeds: [embed] })
     }
+}
